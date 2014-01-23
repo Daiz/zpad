@@ -3,7 +3,8 @@ var zpad = function(n, m, c) {
   if (!c) c = zpad.character$;
   if (m < 1) m = 1;
   n = "" + n;
-  while(n.length < m) n = c + n;
+  m -= n.length;
+  while (m-- > 0) n = c + n;
   return n;
 }
 zpad.default$ = 2;
