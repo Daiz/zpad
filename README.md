@@ -31,4 +31,4 @@ pad(5);              // -> "YYYY5"
 
 ## Legalese
 
-No Rights Reserved, *zpad* has been released under [CC0](http://creativecommons.org/publicdomain/zero/1.0/). As such, feel free to use it in any manner you want.
+No Rights Reserved, *zpad* has been released under [CC0](http://creativecommons.org/publicdomain/zero/1.0/). Feel free to use it in any manner you want.
