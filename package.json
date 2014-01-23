@@ -5,10 +5,7 @@
   "author": "Daiz <taneli.vatanen@gmail.com>",
   "license": "CC0",
   "main": "./zpad.js",
-  "dependencies": {
-    "LiveScript": "~1.2.0",
-    "shelljs": "~0.2.6"
-  },
+  "dependencies": {},
   "devDependencies": {},
   "repository": {
     "type": "git",
