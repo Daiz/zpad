@@ -16,11 +16,17 @@ $ npm install zpad
 var zpad = require('zpad');
 zpad(5)             // -> "05", zpad pads to 2 digits by default
 zpad(5, 3)          // -> "005", you can pass a second parameter to specify the amount of digits
-zpad.default = 3;   // you can also change the default by changing zpad.default
+zpad.default(3);    // change the default padding amount by calling zpad.default with a number
+zpad.default();     // -> 3, returns the padding amount with no arguments
 zpad(5)             // -> "005"
-zpad.padWith = 'X'; // you can also change the character used for padding
+zpad.padWith('X');  // change the character used for padding by calling zpad.padWith with a string
+zpad.padWith();     // -> "X", returns the padding character with no arguments
 zpad(5)             // -> "XX5"
 zpad(5, 3, 'Z');    // -> "ZZ5", you can also pass custom pad character as third parameter
+
+// .default and .padWith can also be chained, which allows you to define them when loading the module
+var pad = require('zpad').default(4).character('Y');
+pad(5)              // -> "YYYY5"
 ```
 
 ## Legalese
