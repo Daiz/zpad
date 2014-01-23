@@ -1,6 +1,6 @@
 {
   "name": "zpad",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Zero padding for numbers.",
   "author": "Daiz <taneli.vatanen@gmail.com>",
   "license": "CC0",
