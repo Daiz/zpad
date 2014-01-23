@@ -24,7 +24,7 @@ zpad.padWith();     // -> "X", returns the padding character with no arguments
 zpad(5)             // -> "XX5"
 zpad(5, 3, 'Z');    // -> "ZZ5", you can also pass custom pad character as third parameter
 
-// .default and .padWith can also be chained, which allows you to define them when loading the module
+// .default and .padWith can also be chained, allowing you to define them when loading the module
 var pad = require('zpad').default(4).character('Y');
 pad(5)              // -> "YYYY5"
 ```
