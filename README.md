@@ -19,7 +19,7 @@ zpad(5, 3);          // -> "005", you can pass a second parameter to specify the
 zpad.default(3);     // change the default padding amount by calling zpad.default with a number
 zpad.default();      // -> 3, returns the padding amount with no arguments
 zpad(5);             // -> "005"
-zpad.character('X'); // change the character used for padding by calling zpad.character with a string
+zpad.character('X'); // change what is used for padding by calling zpad.character with a string
 zpad.character();    // -> "X", returns the padding character with no arguments
 zpad(5);             // -> "XX5"
 zpad(5, 3, 'Z');     // -> "ZZ5", you can also pass custom pad character as third parameter
