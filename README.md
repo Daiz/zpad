@@ -1,4 +1,4 @@
-# zpad - Zero padding for strings/numbers
+# zpad - Zero padding for Node.js
 
 *zpad* is a tiny Node.js module for zero padding strings and numbers, because I got tired of copypasting a function for this in every other thing I've been writing.
 
