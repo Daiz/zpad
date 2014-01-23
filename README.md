@@ -14,12 +14,13 @@ $ npm install zpad
 
 ```javascript
 var zpad = require('zpad');
-zpad(5)           // -> "05", zpad pads to 2 digits by default
-zpad(5, 3)        // -> "005", you can pass a second parameter to specify the amount of digits
-zpad.default = 3; // you can also change the default by changing zpad.default
-zpad(5)           // -> "005"
-zpad.char = 'X';  // you can also change the character used for padding
-zpad(5)           // -> "XX5"
+zpad(5)             // -> "05", zpad pads to 2 digits by default
+zpad(5, 3)          // -> "005", you can pass a second parameter to specify the amount of digits
+zpad.default = 3;   // you can also change the default by changing zpad.default
+zpad(5)             // -> "005"
+zpad.padWith = 'X'; // you can also change the character used for padding
+zpad(5)             // -> "XX5"
+zpad(5, 3, 'Z');    // -> "ZZ5", you can also pass custom pad character as third parameter
 ```
 
 ## Legalese
