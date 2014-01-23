@@ -1,6 +1,6 @@
 // main function
 var zpad = function (n, m, c) {
-  if (!m) m = zpad._length;
+  if (!m) m = zpad._amount;
   if (!c) c = zpad._character;
   if (m < 1) m = 1;
   n = "" + n;
@@ -10,16 +10,16 @@ var zpad = function (n, m, c) {
 }
 
 // properties
-zpad._length = 2;
+zpad._amount = 2;
 zpad._character = '0';
 
-// 'length' getter/setter
-zpad.length = function (m) {
+// 'amount' getter/setter
+zpad.amount = function (m) {
   if (m) {
-    zpad._length = m;
+    zpad._amount = m;
     return zpad; // return main function for chaining
   } else {
-    return zpad._length;
+    return zpad._amount;
   }
 }
 
