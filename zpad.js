@@ -2,7 +2,6 @@
 var zpad = function (n, m, c) {
   if (!m) m = zpad._amount;
   if (!c) c = zpad._character;
-  if (m < 1) m = 1;
   n = "" + n;
   m -= n.length;
   while (m-- > 0) n = c + n;
