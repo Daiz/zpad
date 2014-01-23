@@ -1,5 +1,5 @@
 // main function
-var zpad = function(n, m, c) {
+var zpad = function (n, m, c) {
   if (!m) m = zpad.default$;
   if (!c) c = zpad.character$;
   if (m < 1) m = 1;
@@ -14,9 +14,9 @@ zpad.default$ = 2;
 zpad.character$ = '0';
 
 // 'default' getter/setter
-zpad.default = function(a) {
-  if(a) {
-    zpad.default$ = a;
+zpad.default = function (m) {
+  if (m) {
+    zpad.default$ = m;
     return zpad; // return main function for chaining
   } else {
     return zpad.default$;
@@ -24,8 +24,8 @@ zpad.default = function(a) {
 }
 
 // 'character' getter/setter
-zpad.character = function(c) {
-  if(c) {
+zpad.character = function (c) {
+  if (c) {
     zpad.character$ = c;
     return zpad; // return main function for chaining
   } else {
