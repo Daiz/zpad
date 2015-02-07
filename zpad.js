@@ -1,11 +1,14 @@
 // main function
+var _=require('lodash');
+
 var zpad = function (n, m, c) {
   if (!m) m = zpad._amount;
   if (!c) c = zpad._character;
   n = "" + n;
-  m -= n.length;
-  while (m-- > 0) n = c + n;
-  return n;
+  var currentDigits = Math.floor(Math.log(10)/Math.log(10))+1,
+    neededDigits = m,
+    remainingDigits = Math.min(0,neededDigits - currentDigits);
+  return _.repeat(c,remainingDigits)+n;
 }
 
 // properties
