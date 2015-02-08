@@ -5,7 +5,9 @@
   "author": "Daiz <taneli.vatanen@gmail.com>",
   "license": "CC0",
   "main": "./zpad.js",
-  "dependencies": {},
+  "dependencies": {
+    "lodash":"*"
+  },
   "devDependencies": {},
   "repository": {
     "type": "git",
